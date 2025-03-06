@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  /* 🔹 Contenedor Principal */
+  .task-admin-container {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* 🔹 Título */
+  .task-admin-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /*  Select, Inputs y Textarea */
+ 
+  .task-admin-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: var(--sm);
+    transition: 0.3s;
+  }
+
+  .task-admin-select{
+    width: 97%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: var(--sm);
+  }
+
+  .task-admin-input{
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: var(--sm);
+  }
+  
+  .task-admin-select:focus,
+  .task-admin-input:focus,
+  .task-admin-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* 🔹 Botón */
+  .task-admin-button {
+    width: 100%;
+    background-color: var(--hospital-green);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--md);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .task-admin-button:hover {
+    background-color: var(--very-light-pink);
+  }
+
+  .task-admin-textarea{
+    width: 468px;
+    height: 100px;
+    resize: none;
+  }
+  
+  /* 🔹 Responsive */
+  @media (max-width: 600px) {
+    .task-admin-container {
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
+  
+  

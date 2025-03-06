@@ -1,0 +1,61 @@
+/* Navbar.css */
+
+/* Estilos generales */
+.container-navbar-principal {
+    background-color: var(--hospital-green); /* Color de fondo */
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+}
+
+/* Estilos del nav */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Estilos de los elementos de la lista */
+nav ul li {
+    display: inline-block;
+}
+
+/* Estilos de los enlaces */
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Color del texto */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover */
+nav ul li a:hover {
+    background-color: var(--very-light-pink); /* Color al pasar el mouse */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contenedor {
+        justify-content: center; /* Centra los elementos en pantallas pequeñas */
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+

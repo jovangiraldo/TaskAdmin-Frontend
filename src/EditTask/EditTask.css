@@ -1,0 +1,38 @@
+.select-editTask{
+    display: flex;
+    justify-content: center;
+    font-size: var(--lg);
+}
+
+.btnBack{
+    margin-left: 30px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.btnBack:hover {
+    transform: scale(1.2);  
+}
+
+
+.edit-task-btn{
+
+    border: none;
+    background-color: white;
+}
+
+.contenedor-btns{
+
+}
+
+.contenedorList li {
+
+    display: flex;
+    align-items: center;
+}
+
+.select-editTask label {
+    display: flex;
+    align-items: center;
+}

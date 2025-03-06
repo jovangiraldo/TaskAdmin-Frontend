@@ -1,0 +1,39 @@
+.task-list-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.task-item {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.containBtnTask{
+    display: inline-flex;
+    margin-left: 50px;
+}
+
+.btnState{
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--hospital-green);
+    border: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 15px;
+}
