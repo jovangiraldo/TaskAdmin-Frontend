@@ -52,7 +52,7 @@ import { fetchUsers, assignTask } from "../actions"; // ← Importamos el servic
 
   return (
    
-  <div className="task-admin-pricipal;">
+  <div className="task-admin-pricipal">
     <Navbar />
     <div className="task-admin-container">
       <h2 className="task-admin-title">Panel de Administración - Asignar Tareas</h2>

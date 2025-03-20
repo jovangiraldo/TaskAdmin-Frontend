@@ -66,7 +66,7 @@ export const createAccount = async (userData) => {
 // 🔹 Iniciar sesión
 export const login = async (email, password) => {
   try {
-    const response = await apiAuth.post("/login", { email, password }, { withCredentials: true });
+    const response = await apiAuth.post("/login", { email, password }, { withCredentials: true });    
 
     localStorage.setItem("token", response.data.token);
     localStorage.setItem("role", response.data.role);
@@ -83,7 +83,7 @@ export const login = async (email, password) => {
 // 🔹 Obtener todos los usuarios (Solo Admin)
 export const fetchUsers = async (token) => {
   try {
-    const response = await apiAuth.get("/users", {
+    const response =  await apiAccount.get("/GetUsers", {
       headers: { Authorization: `Bearer ${token}` },
     });
     return response.data;

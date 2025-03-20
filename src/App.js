@@ -5,6 +5,7 @@ import { CreateAccount } from "./CreateAccount";
 import { CreateTask } from "./CreateTaskAdmin";
 import { TaskAssigned } from "./TaskAssigned";
 import { EditTask } from "./EditTask";
+import ResetPassword from "./ChangePassword";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/create-task" element={<CreateTask />} />
         <Route path="/Task-Assiend" element={<TaskAssigned />} />
         <Route path="/Task-Edit" element={<EditTask/>} />
-        <Route path="*" element={<Login />} /> {/* Redirección a Login si la ruta no existe */}
+        <Route path="/ResetPassword" element={<ResetPassword/>} />
+        <Route path="*" element={<Login />} /> 
       </Routes>
     </>
   );

@@ -15,8 +15,9 @@ function Login() {
 
         try {
           const respose =  await login(email, password);
-          
+         
           if (respose) {
+            
              const {token, role} = respose;
 
              localStorage.setItem("token",token);
@@ -69,7 +70,7 @@ function Login() {
 
                     <input type="submit" value="Log in" className="primary-button login-button" />
                     
-                    <a href="/">Forgot my password</a>
+                    <a href="/ResetPassword">Forgot my password</a>
                 </form>   
 
                 <Link to="/create-account">
